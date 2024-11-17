@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <style type="text/css">
+      /*Main Body Resets Start*/
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+      }
+
+      img {
+        border: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #3d3d3d;
+      }
+
+      .content {
+        line-height: 20px;
+        font-size: 16px;
+      }
+
+      .hyperlinks-body:hover {
+        opacity: 0.4;
+      }
+
+      /*Main Body Resets ends*/
+
+      /*Email Resets*/
+      u + .body .gmail-blend-screen {
+        background: #000;
+        mix-blend-mode: screen;
+      }
+
+      u + .body .gmail-blend-difference {
+        background: #000;
+        mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      /*Email Resets ends*/
+
+      /*CSS column resets start*/
+
+      .column-wrapper {
+        font-size: 0;
+        text-align: center;
+      }
+
+      .column-wrapper .padding {
+        color: #3d3d3d;
+        padding: 20px;
+      }
+
+      .column-wrapper .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .column-wrapper .column-one-fourth {
+        max-width: 150px;
+      }
+
+      .column-wrapper .column-one-third {
+        max-width: 80px;
+      }
+
+      .column-wrapper .column-one-half {
+        max-width: 300px;
+      }
+
+      .column-wrapper .column-two-third {
+        max-width: 400px;
+      }
+
+      /*CSS column resets end*/
+
+      @media screen and (max-width: 599.98px) {
+        /*CSS for responsive columns start*/
+        .column-wrapper {
+          padding: 15px 30px 15px !important;
+        }
+
+        .column-wrapper .padding {
+          padding: 5px 30px !important;
+        }
+
+        .column-wrapper .column,
+        .column-wrapper .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        /*CSS for responsive columns end*/
+        .px-600-0 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        .d-600-width {
+          width: 50% !important;
+        }
+      }
+
+      @media screen and (max-width: 574.98px) {
+        .d-600-width {
+          width: 40% !important;
+        }
+      }
+
+      @media screen and (max-width: 499.98px) {
+        .d-600-width {
+          width: 30% !important;
+        }
+      }
+
+      @media screen and (max-width: 432.98px) {
+        .d-600-width {
+          width: 25% !important;
+        }
+
+        .wd-430-40 {
+          width: 40px !important;
+        }
+      }
+
+      @media screen and (max-width: 408.98px) {
+        .d-600-width {
+          width: 15% !important;
+        }
+      }
+
+      @media screen and (max-width: 399.98px) {
+        /*CSS for responsive columns start*/
+        .column-wrapper {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+
+        .column-wrapper .padding {
+          padding: 15px !important;
+        }
+
+        /*CSS for responsive columns end*/
+
+        .d-390-none {
+          visibility: hidden !important;
+          display: none !important;
+          height: 0px !important;
+          width: 0px !important;
+        }
+      }
+
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .app-darkmode-background {
+          background: #2d2d2d !important;
+        }
+
+        .app-darkmode-text {
+          color: #ffffff !important;
+        }
+
+        .app-darkmode-hyperlink {
+          color: #ffffff !important;
+        }
+
+        .app-darkmode-header {
+          background-color: #3a10e5 !important;
+        }
+
+        .darkmode-transparent {
+          background-color: transparent !important;
+        }
+
+        [data-ogsc] .app-darkmode-background {
+          background: #2d2d2d !important;
+        }
+
+        [data-ogsc] .app-darkmode-text {
+          color: #ffffff !important;
+        }
+
+        [data-ogsc] .app-darkmode-header {
+          background-color: #3a10e5 !important;
+        }
+
+        [data-ogsc] .app-darkmode-hyperlink {
+          color: #ffffff !important;
+        }
+
+        [data-ogsc] .darkmode-transparent {
+          background-color: transparent !important;
+        }
+      }
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+        body {
+          background-color: #ffffff !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: Arial, Helvetica, sans-serif !important;
+        }
+        table {
+          border-spacing: 0 !important;
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    class="body"
+    xml:lang="en"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #ffffff"
+  >
+    <div
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0 auto;
+      "
+      class="app-darkmode-background"
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #ffffff;
+          color: #fff0e5;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          margin: 0 auto;
+        "
+      >
+        <!--Pre Header Start-->
+        <div
+          style="
+            font-size: 0;
+            color: #10162f;
+            mso-line-height-rule: exactly;
+            line-height: 0px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          This is our preheader text which can be 35-190 characters but 85-100
+          is recommended.
+          &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        </div>
+        <!--Pre Header End-->
+
+        <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;" role="presentation">
+            <tr>
+            <td style="padding: 0;">
+         <![endif]-->
+
+        <!--Main Table Start-->
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #ffffff;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- START HEADER -->
+          <tr>
+            <td style="padding: 0; border-bottom: 1px solid black">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 30px 30px 20px; text-align: center; color: #92979d; font-family: 'Poppins'; font-weight: 600; font-size: 18px;">
+                    daily<span style="color:#000">passport</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+
+          <!-- START HEADER -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 20px 30px 10px; text-align: center">
+                    <p
+                      style="
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin: 0;
+                        line-height: 30px;
+                        font-family: 'Poppins';
+                        color: #92979d;
+                      "
+                    >
+                      TOGETHER WITH
+                      <span
+                        style="
+                          font-family: Arial, Helvetica, sans-serif;
+                          color: #000000;
+                        "
+                        >HEAR.COM</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+          <!-- START HEADER -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0px 30px 20px; text-align: center">
+                    <p
+                      style="
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin: 0;
+                        line-height: 30px;
+                        font-family: 'Poppins';
+                        color: #000000;
+                      "
+                    >
+                      Cocoa Beach
+                     
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+          <!-- START HEADER -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0px 30px 0px; text-align: center">
+                    <p
+                      style="
+                        font-size: 11px;
+                        font-weight: 200;
+                        margin: 0;
+                        line-height: 1px;
+                        font-family: 'Poppins';
+                        color: #92979d;
+                        letter-spacing: 1px;
+                        
+                      "
+                    >
+                      FLORIDA
+                      
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+     
+
+
+          <!-- START BANNER -->
+          <tr>
+            <td style="padding: 20px 30px 20px 30px; line-height: 0px">
+              <a
+                href="https://try.codecademy.com/skill-progress?utm_source=iterable&utm_medium=email&utm_campaign=august_2024_monthly_newsletter&utm_content=skillxp_lp_img"
+                target="_blank"
+              >
+                <img
+                  src="https://mcusercontent.com/85bef539d96648d03642f2b54/images/b73c950e-d6e8-6a31-7e76-2da40c4b734e.jpg"
+                  alt="Oats of Maine Collection"
+                  title="CodeAcademy skill chart"
+                  width="540"
+                  height="auto"
+                  style="border: 0; width: 100%; border-radius: 15px"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END BANNER -->
+          <!-- START HEADER -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 10px 30px 20px;">
+                    <p
+                      style="
+                        font-size: 11px;
+                        font-weight: 600;
+                        margin: 0;
+                        line-height: 1px;
+                        font-family: 'Poppins';
+                        color: #000000;
+                        letter-spacing: 1px;
+                        
+                      "
+                    >
+                     <span style="color: #ff6600"
+                    >CULTURE</span> |  
+                      
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+
+          <!-- START CENTERED CONTENT -->
+          <tr>
+            <td style="padding: 0 0 20px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="padding content"
+                    style="
+                      padding: 0px 30px 10px;
+                      width: 100%;
+                      text-align: center;
+                      font-size: 20px;
+                      text-align: left;
+                    "
+                  >
+                    <h2
+                      style="
+                        font-family: 'Poppins';
+                        font-weight: 800;
+                        padding-bottom: 5px;
+                        line-height: 32px;
+                        text-align: left;
+                      "
+                    >Discovering Cocoa Beach:<br> Surf, Sun, and Space Coast Charm
+                      
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="padding content"
+                    style="
+                      padding: 0px 30px 10px;
+                      width: 100%;
+                      text-align: center;
+                      font-size: 20px;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        font-size: 16px;
+                        line-height: 23px;
+                        padding-bottom: 5px;
+                      "
+                    >
+                      Cocoa Beach, located on Florida’s Space Coast, is a sun-soaked paradise that effortlessly combines relaxation with adventure. Known for its pristine golden sands and vibrant surf culture, the beach is a haven for sunbathers, surfers, and nature enthusiasts alike. With gentle waves perfect for beginner surfers and a laid-back atmosphere, it’s an ideal destination for both families and thrill-seekers. Beyond the beach, visitors can explore the iconic Cocoa Beach Pier, indulge in fresh seafood at local eateries, or discover the nearby Kennedy Space Center. Whether you're watching rockets launch from the shore or simply enjoying the sunset over the Atlantic, Cocoa Beach offers an unforgettable slice of coastal charm.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table
+                      align="left"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="left" style="padding: 10px 30px 0">
+                          <table
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                align="center"
+                                style="border-radius: 4px"
+                                bgcolor="#4980D2"
+                              >
+                                <a
+                                  class="hyperlinks-body"
+                                  href="https://try.codecademy.com/skill-progress?utm_source=iterable&utm_medium=email&utm_campaign=august_2024_monthly_newsletter&utm_content=skillxp_lp_cta"
+                                  target="_blank"
+                                  style="
+                                    font-size: 14px;
+                                    font-weight: 0;
+                                    text-decoration: none;
+                                    color: #ffffff;
+                                    background-color: #2d2d2d;
+                                    border: 1px solid #2d2d2d;
+                                    border-radius: 4px;
+                                    padding: 10px 16px;
+                                    display: inline-block;
+                                    font-family: 'Poppins';
+                                    letter-spacing: 2px;
+                                  "
+                                  >KEEP READING
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END CENTERED CONTENT -->
+          <!-- START HEADER -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 20px 30px 20px;">
+                    <p
+                      style="
+                        font-size: 11px;
+                        font-weight: 600;
+                        margin: 0;
+                        line-height: 1px;
+                        font-family: 'Poppins';
+                        color: #000000;
+                        letter-spacing: 1px;
+                        
+                      "
+                    >
+                     <span style="color: #ff6600"
+                    > THE ACTION</span>  |  
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+          <!-- START BANNER -->
+          <tr>
+            <td style="padding: 0px 30px 20px 30px; line-height: 0px">
+              <a
+                href="https://try.codecademy.com/skill-progress?utm_source=iterable&utm_medium=email&utm_campaign=august_2024_monthly_newsletter&utm_content=skillxp_lp_img"
+                target="_blank"
+              >
+                <img
+                  src="https://mcusercontent.com/85bef539d96648d03642f2b54/images/89e5c59f-0365-1e01-9018-be4f48294c90.jpg"
+                  alt="Oats of Maine Collection"
+                  title="CodeAcademy skill chart"
+                  width="540"
+                  height="auto"
+                  style="border: 0; width: 100%; border-radius: 15px"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END BANNER -->
+          <!-- START CENTERED CONTENT -->
+          <tr>
+            <td style="padding: 0 0 20px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="padding content"
+                    style="
+                      padding: 0px 30px 10px;
+                      width: 100%;
+                      text-align: center;
+                      font-size: 20px;
+                      text-align: left;
+                    "
+                  >
+                    <h2
+                      style="
+                        font-family: 'Poppins';
+                        font-weight: 800;
+                        padding-bottom: 5px;
+                        line-height: 32px;
+                        text-align: left;
+                        font-size: 26px;
+                      "
+                    >The 10 Best Surf Destinations in the world!
+                      
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="padding content"
+                    style="
+                      padding: 0px 30px 10px;
+                      width: 100%;
+                      text-align: center;
+                      font-size: 20px;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        font-size: 16px;
+                        line-height: 23px;
+                        padding-bottom: 5px;
+                      "
+                    >
+                      Surfing enthusiasts around the world are always on the lookout for the best destinations to catch the perfect wave. From the pristine beaches of Hawaii, where the sport was born, to the powerful breaks of Indonesia's Bali and Sumatra, there's a surf spot for every skill level and style. Australia's Gold Coast offers a mix of perfect point breaks and lively surf culture, while Portugal's Algarve coast provides a combination of challenging waves and stunning scenery. For those seeking something more remote, Nicaragua’s lesser-known beaches offer consistent swells and uncrowded surf. In the Americas, Costa Rica’s Pacific coast is renowned for its reliable conditions, making it a favorite for both beginners and advanced surfers alike. Whether you're chasing barrel waves or mellow longboard sessions, these destinations promise unforgettable experiences for surfers of all levels.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table
+                      align="left"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="left" style="padding: 10px 30px 0">
+                          <table
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                align="center"
+                                style="border-radius: 4px"
+                                bgcolor="#4980D2"
+                              >
+                                <a
+                                  class="hyperlinks-body"
+                                  href="https://try.codecademy.com/skill-progress?utm_source=iterable&utm_medium=email&utm_campaign=august_2024_monthly_newsletter&utm_content=skillxp_lp_cta"
+                                  target="_blank"
+                                  style="
+                                    font-size: 14px;
+                                    font-weight: 0;
+                                    text-decoration: none;
+                                    color: #ffffff;
+                                    background-color: #2d2d2d;
+                                    border: 1px solid #2d2d2d;
+                                    border-radius: 4px;
+                                    padding: 10px 16px;
+                                    display: inline-block;
+                                    font-family: 'Poppins';
+                                    letter-spacing: 2px;
+                                  "
+                                  >READ MORE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END CENTERED CONTENT -->
+           <!-- START HEADER -->
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 20px 30px 20px;">
+                    <p
+                      style="
+                        font-size: 11px;
+                        font-weight: 600;
+                        margin: 0;
+                        line-height: 1px;
+                        font-family: 'Poppins';
+                        color: #000000;
+                        letter-spacing: 1px;
+                        
+                      "
+                    >
+                     <span style="color: #ff6600"
+                    >KEEP EXPLORING</span>  |  
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END HEADER -->
+          <!-- START BANNER -->
+          <tr>
+            <td style="padding: 0px 30px 20px 30px; line-height: 0px">
+              <a
+                href="https://try.codecademy.com/skill-progress?utm_source=iterable&utm_medium=email&utm_campaign=august_2024_monthly_newsletter&utm_content=skillxp_lp_img"
+                target="_blank"
+              >
+                <img
+                  src="https://mcusercontent.com/85bef539d96648d03642f2b54/images/6d9b9387-b84e-a4cb-b701-7da4d245f528.jpg"
+                  alt="Oats of Maine Collection"
+                  title="CodeAcademy skill chart"
+                  width="540"
+                  height="auto"
+                  style="border: 0; width: 100%; border-radius: 15px"
+                />
+              </a>
+            </td>
+          </tr>
+          <!-- END BANNER -->
+          <!-- START CENTERED CONTENT -->
+          <tr>
+            <td style="padding: 0 0 20px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="padding content"
+                    style="
+                      padding: 0px 30px 10px;
+                      width: 100%;
+                      text-align: center;
+                      font-size: 20px;
+                      text-align: left;
+                    "
+                  >
+                    <h2
+                      style="
+                        font-family: 'Poppins';
+                        font-weight: 800;
+                        padding-bottom: 5px;
+                        line-height: 32px;
+                        text-align: left;
+                        font-size: 26px;
+                      "
+                    >7 of the Quirkiest Road Stops in the U.S.
+                      
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="padding content"
+                    style="
+                      padding: 0px 30px 10px;
+                      width: 100%;
+                      text-align: center;
+                      font-size: 20px;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        font-size: 16px;
+                        line-height: 23px;
+                        padding-bottom: 5px;
+                      "
+                    >
+                      While on a road trip, you can always stretch your legs at any old gas station, but why not make a pit stop that's far more interesting? Check out seven of America's quirkiest and most fascinating roadside rest stops.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table
+                      align="left"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td align="left" style="padding: 10px 30px 0">
+                          <table
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td
+                                align="center"
+                                style="border-radius: 4px"
+                                bgcolor="#4980D2"
+                              >
+                                <a
+                                  class="hyperlinks-body"
+                                  href="https://try.codecademy.com/skill-progress?utm_source=iterable&utm_medium=email&utm_campaign=august_2024_monthly_newsletter&utm_content=skillxp_lp_cta"
+                                  target="_blank"
+                                  style="
+                                    font-size: 14px;
+                                    font-weight: 0;
+                                    text-decoration: none;
+                                    color: #ffffff;
+                                    background-color: #2d2d2d;
+                                    border: 1px solid #2d2d2d;
+                                    border-radius: 4px;
+                                    padding: 10px 16px;
+                                    display: inline-block;
+                                    font-family: 'Poppins';
+                                    letter-spacing: 2px;
+                                  "
+                                  >READ MORE
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END CENTERED CONTENT -->
+
+         
+
+          
+        </table>
+
+        <!--Main Table end-->
+
+        <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+         <![endif]-->
+      </div>
+    </div>
+  </body>
+</html>
